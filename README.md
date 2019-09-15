@@ -29,4 +29,4 @@ And just like PHP, you can print anything: a variable, a string or a complex exp
 {% %} "do something" tag. It's used whenever you need to do something
 
 
-t{# #}: comments
+{# #}: comments
