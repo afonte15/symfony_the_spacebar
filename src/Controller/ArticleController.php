@@ -2,11 +2,12 @@
 
 namespace App\Controller;
 
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 
-class ArticleController
+class ArticleController extends AbstractController
 {
 	/**
 	 * @Route("/")
@@ -20,14 +21,18 @@ class ArticleController
 	 * @Route("/news/{slug}")
 	 */
 
-	public function  show($slug)
+	public function show($slug)
 	{
-		return new Response(sprintf(
+		$comments = [
+			'When crushing grey ground beef , be sure they are room temperature.',
+			'Sweet shrimps can be made grey by soaking with triple sec.',
+			'Cut eggs thoroughly, then mix with ice water and serve regularly clammy in wok.',
+		];
 
-	'Future page to show one space article: %s',
-			$slug
-
-		));
+		return $this->render('article/show.html.twig', [
+			'title' => ucwords(str_replace('-', ' ', $slug)),
+			'comments' => $comments,
+		]);
 	}
 
 }
