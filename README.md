@@ -18,6 +18,8 @@ command to check for package vulnerabilities after installing sec-checker:
 
 ./bin/console security:check
 
+to check routes
+./bin/console debug:router
 
 ###Twig Basic Syntax:
 
@@ -32,3 +34,4 @@ And just like PHP, you can print anything: a variable, a string or a complex exp
 {# #}: comments
 
 Twig Documentation Reference - https://twig.symfony.com/doc/2.x/
+
