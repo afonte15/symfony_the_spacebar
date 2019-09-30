@@ -14,7 +14,7 @@ class ArticleController extends AbstractController
 	 */
 	public function homepage()
 	{
-		return new Response('MY FIRST SYMFONY PAGE!');
+		return $this->render('article/homepage.html.twig');
 	}
 
 	/**
