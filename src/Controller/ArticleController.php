@@ -37,4 +37,13 @@ class ArticleController extends AbstractController
 		]);
 	}
 
+	/**
+	 * @Route("/news/{slug}/heart", name="article_toggle_heart")
+	 */
+
+	public function toggleArticleHeart()
+	{
+
+	}
+
 }
