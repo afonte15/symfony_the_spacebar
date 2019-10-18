@@ -21,6 +21,9 @@ command to check for package vulnerabilities after installing sec-checker:
 to check routes
 ./bin/console debug:router
 
+to check for services type hints
+./bin/console debug:autowiring
+
 ###Twig Basic Syntax:
 
 {{ }} "say something" tag, because it prints. 
