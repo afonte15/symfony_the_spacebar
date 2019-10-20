@@ -24,6 +24,9 @@ to check routes
 to check for services type hints
 ./bin/console debug:autowiring
 
+to install Doctrine (Database)
+composer require doctrine
+
 ###Twig Basic Syntax:
 
 {{ }} "say something" tag, because it prints. 
