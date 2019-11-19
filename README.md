@@ -27,6 +27,20 @@ to check for services type hints
 to install Doctrine (Database)
 composer require doctrine
 
+###Setting Up Database
+install doctrine
+
+composer require doctrine
+
+update .env file with database settings.  See line below to update
+
+
+replace db_user and db_password and db_name  
+
+
+DATABASE_URL=mysql://db_user:db_password@127.0.0.1:3306/db_name
+
+
 ###Twig Basic Syntax:
 
 {{ }} "say something" tag, because it prints. 
